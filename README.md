@@ -1,13 +1,23 @@
-url-id
-======
+imperative-coder
+================
 
-A utility for encoding and parsing tiny, url-safe objects of identifiers
+A utility for achieving maximum packing for sequences of arbitrary-base fractions.
+
+In other words, this implements some form of a radix conversion from arbitrary-radix values to
+fixed-radix values. Typically, the fixed radix will be something like 256 or 64, to fit into common
+"encoding schemes" such as byte arrays and base-64 encoded strings. Also offers the ability to take
+arbitrarily-structure data and find some terse encoding based on common or user-defined
+configurations.
+
+Interface is a work-in-progress, as is the actual unoptimized implementation.
+
+This is a BYOV (Bring Your Own Versioning) protocol.
 
 Install
 -------
 
 ```sh
-$ npm install @mixmaxhq/url-id
+$ npm install imperative-coder
 ```
 
 Usage
@@ -72,4 +82,4 @@ Buffer.from(JSON.stringify(exampleData)).toString('base64');
 License
 -------
 
-[The MIT License](https://github.com/mixmaxhq/url-id/blob/master/LICENSE)
+[The MIT License](https://github.com/skeggse/imperative-coder/blob/main/LICENSE)
